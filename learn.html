@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>GuoDingo - Learn English</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700;900&amp;display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ec9513",
+              "background-light": "#f8f7f6",
+              "background-dark": "#221b10",
+            },
+            fontFamily: {
+              display: ["Lexend", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style>
+      body {
+          font-family: 'Lexend', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-background-light dark:bg-background-dark font-display text-zinc-900 dark:text-zinc-200">
+    <div class="flex flex-col min-h-screen">
+      <header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-primary/20 dark:border-primary/30 fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-16">
+            <div class="flex items-center gap-4">
+              <div class="text-primary size-7">
+                <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z" fill="currentColor"></path>
+                </svg>
+              </div>
+              <h1 class="text-xl font-bold text-zinc-900 dark:text-white">English Learning Web</h1>
+            </div>
+            <nav class="hidden md:flex items-center gap-8">
+              <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors" href="landing-page.html">Home</a>
+              <a class="text-sm font-medium hover:text-primary dark:hover:text-primary" href="learn.html">Learn</a>
+              <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors" href="practice.html">Practice</a>
+              <a class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors" href="about.html">About</a>
+            </nav>
+            <div class="flex items-center gap-4">
+              <button class="p-2 rounded-full hover:bg-primary/20 dark:hover:bg-primary/30 text-zinc-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary transition-colors">
+                <span class="material-symbols-outlined"> notifications </span>
+              </button>
+              <div
+                class="w-10 h-10 rounded-full bg-cover bg-center"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBFOWf9zLQ5r0aI857WefbUuydRi0ZJ7xIM36vIdBV6VgIdF7PrFxR21FGzfwp6km7dQhYo7z_DvCa6HZFvIT67r60bzMPUMUtCMa-VxnxqkNxsio0DdvZ1kURUyyw7dwgE8kVyK6ZGt22DHsJ1qPQDhZc8h3LyV4IpQwG8GNbr7IAfv7L-bEPz1453Lv_sfdj2hTS6Q8K7MSYSIpa4A81cLIFvfGhCq7iRBYS6wdT2hPVaYsO1KpWD2unnQMWRqArfw_8J7HzaiJHy");'
+              ></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+        <div class="max-w-4xl mx-auto">
+          <div class="mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-zinc-900 dark:text-white mb-2">Learn English Structures</h2>
+            <p class="text-zinc-600 dark:text-zinc-400">Master new vocabulary and grammar through interactive scenarios.</p>
+          </div>
+          <div class="border-b border-zinc-200 dark:border-zinc-800 mb-8">
+            <nav aria-label="Tabs" class="-mb-px flex space-x-8">
+              <a class="border-primary text-primary whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" href="#"> Phone Conversations </a>
+              <a class="border-transparent text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 hover:border-zinc-300 dark:hover:border-zinc-700 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" href="#">
+                Classroom Learning
+              </a>
+              <a class="border-transparent text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 hover:border-zinc-300 dark:hover:border-zinc-700 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" href="#">
+                Daily Life
+              </a>
+            </nav>
+          </div>
+          <div class="bg-background-light dark:bg-zinc-900/50 rounded-xl p-6 md:p-8 shadow-sm">
+            <div class="flex flex-col md:flex-row md:items-center gap-6 mb-8">
+              <div class="flex-shrink-0">
+                <div class="w-24 h-24 rounded-full bg-primary/20 flex items-center justify-center">
+                  <span class="material-symbols-outlined text-5xl text-primary"> phone_in_talk </span>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-zinc-900 dark:text-white">Interactive Scenario: At the Office</h3>
+                <p class="text-zinc-600 dark:text-zinc-400 mt-1">Engage in a simulated phone conversation to practice your English. Click the buttons to respond and progress through the scenario.</p>
+              </div>
+            </div>
+            <div class="space-y-4 max-w-lg mx-auto">
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-10 h-10 rounded-full bg-cover bg-center flex-shrink-0"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBFOWf9zLQ5r0aI857WefbUuydRi0ZJ7xIM36vIdBV6VgIdF7PrFxR21FGzfwp6km7dQhYo7z_DvCa6HZFvIT67r60bzMPUMUtCMa-VxnxqkNxsio0DdvZ1kURUyyw7dwgE8kVyK6ZGt22DHsJ1qPQDhZc8h3LyV4IpQwG8GNbr7IAfv7L-bEPz1453Lv_sfdj2hTS6Q8K7MSYSIpa4A81cLIFvfGhCq7iRBYS6wdT2hPVaYsO1KpWD2unnQMWRqArfw_8J7HzaiJHy");'
+                ></div>
+                <div class="bg-zinc-200/50 dark:bg-zinc-800 p-4 rounded-lg rounded-tl-none">
+                  <p class="font-medium text-zinc-800 dark:text-zinc-200">Alex</p>
+                  <p class="text-zinc-700 dark:text-zinc-300">Hello, this is Alex from marketing. Could I speak to Sarah, please?</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4 justify-end">
+                <div class="bg-primary text-white p-4 rounded-lg rounded-br-none">
+                  <p class="font-medium">You (Sarah)</p>
+                  <p>Speaking. How can I help you, Alex?</p>
+                </div>
+                <div class="w-10 h-10 rounded-full bg-zinc-400 dark:bg-zinc-600 flex-shrink-0 flex items-center justify-center font-bold text-white">S</div>
+              </div>
+            </div>
+            <div class="mt-10 pt-6 border-t border-zinc-200 dark:border-zinc-800">
+              <p class="text-center font-medium mb-4 text-zinc-700 dark:text-zinc-300">Choose your response:</p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-lg mx-auto">
+                <button class="w-full text-left p-4 rounded-lg border-2 border-zinc-200 dark:border-zinc-700 hover:border-primary hover:bg-primary/5 dark:hover:bg-primary/10 transition-all">
+                  <span class="font-semibold text-zinc-800 dark:text-zinc-200">"I wanted to discuss the new campaign."</span>
+                </button>
+                <button class="w-full text-left p-4 rounded-lg border-2 border-zinc-200 dark:border-zinc-700 hover:border-primary hover:bg-primary/5 dark:hover:bg-primary/10 transition-all">
+                  <span class="font-semibold text-zinc-800 dark:text-zinc-200">"I'm calling about the quarterly report."</span>
+                </button>
+                <button class="w-full text-left p-4 rounded-lg border-2 border-zinc-200 dark:border-zinc-700 hover:border-primary hover:bg-primary/5 dark:hover:bg-primary/10 transition-all">
+                  <span class="font-semibold text-zinc-800 dark:text-zinc-200">"Just a quick question about the meeting."</span>
+                </button>
+                <button class="w-full text-left p-4 rounded-lg border-2 border-zinc-200 dark:border-zinc-700 hover:border-primary hover:bg-primary/5 dark:hover:bg-primary/10 transition-all">
+                  <span class="font-semibold text-zinc-800 dark:text-zinc-200">"I'm afraid I'm busy right now."</span>
+                </button>
+              </div>
+            </div>
+            <div class="flex justify-center gap-4 mt-10">
+              <button class="px-8 py-3 rounded-lg bg-primary/20 dark:bg-primary/30 text-primary font-bold hover:bg-primary/30 dark:hover:bg-primary/40 transition-colors">Skip</button>
+              <button class="px-8 py-3 rounded-lg bg-primary text-white font-bold hover:opacity-90 transition-opacity">Next</button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="bg-background-light dark:bg-background-dark mt-auto">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <p class="text-center text-sm text-zinc-500 dark:text-zinc-400">© 2024 GuoDingo. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
